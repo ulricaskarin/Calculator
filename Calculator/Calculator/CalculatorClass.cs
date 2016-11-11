@@ -1,4 +1,6 @@
-﻿namespace Calculator
+﻿using System;
+
+namespace Calculator
 {
     public class CalculatorClass
     {
@@ -15,6 +17,11 @@
         public double Product(double number1, double number2)
         {
             return number1*number2;
+        }
+
+        public double Quotient(double number1, double number2)
+        {
+            return number1/number2;
         }
     }
 }

@@ -32,5 +32,13 @@ namespace CalculatorTest
             var actualProduct = sut.Product(10.0, 10.0);
             Assert.Equal(100, actualProduct);
         }
+
+        [Fact]
+        public void DivisionTest()
+        {
+            CalculatorClass sut = new CalculatorClass();
+            var actualQuotient = sut.Quotient(10.0, 1.0);
+            Assert.Equal(10, actualQuotient);
+        }
     }
 }
