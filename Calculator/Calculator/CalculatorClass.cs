@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Calculator
+﻿namespace Calculator
 {
     public class CalculatorClass
     {
@@ -16,6 +10,11 @@ namespace Calculator
         public double Difference(double number1, double number2)
         {
             return number1 - number2;
+        }
+
+        public double Product(double number1, double number2)
+        {
+            return number1*number2;
         }
     }
 }
