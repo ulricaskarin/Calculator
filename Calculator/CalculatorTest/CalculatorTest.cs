@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Calculator;
+﻿using Calculator;
 using Xunit;
 
 namespace CalculatorTest
@@ -21,6 +16,13 @@ namespace CalculatorTest
 
             // Assert
             Assert.Equal(5, actualSum);
+        }
+        [Fact]
+        public void SubtractionTest()
+        {
+            CalculatorClass sut = new CalculatorClass();
+            var actualDifference = sut.Difference(10.0, 5.0);
+            Assert.Equal(5, actualDifference);
         }
     }
 }
